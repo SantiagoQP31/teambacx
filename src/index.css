@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Custom Sports Glow & Aesthetics */
+.text-glow {
+  text-shadow: 0 0 20px rgba(24, 232, 136, 0.4);
+}
+
+.text-glow-subtle {
+  text-shadow: 0 0 30px rgba(164, 223, 214, 0.25);
+}
+
+.glass-pill {
+  background: rgba(14, 35, 27, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(164, 223, 214, 0.2);
+}
+
+.glass-card {
+  background: rgba(11, 24, 18, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(164, 223, 214, 0.15);
+}
